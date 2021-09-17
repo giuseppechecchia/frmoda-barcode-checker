@@ -1,5 +1,5 @@
-# odoo-backend-color
-Change your Odoo 13 backend color easily
+# frmoda-barcode.checker
+Check your barcodes trught https://barcode.monster
 
 
 # Disclaimer
@@ -10,13 +10,6 @@ This deployment is NOT intended for a user-friendly production environment, 'cau
 
 Compatible with Odoo 13.0,
 Web module active needed
-
-### Kind of rapid instructions:
-
-```
-To change your main color go to the static/scss/theme_style.scss file and modify it
-
-```
 
 ## Author
 
