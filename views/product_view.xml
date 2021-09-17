@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_form_fr_product_template_onlyform_barcode" model="ir.ui.view">
+            <field name="name">Product template Barcode </field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_normal_form_view" /> 
+            <field name="arch" type="xml">
+                
+                <field name="barcode" position="attributes">
+                    <attribute name="string">Barcode</attribute>
+                    <attribute name="invisible">1</attribute>
+                </field>
+                <field name="barcode" position="before">
+                    <field name="is_barcode_valid" invisible="1"/>
+                </field>
+
+                <group>
+                    <div><b style="width: 100%;display: block;">Barcode Checker</b>
+                        <field name="barcode" style="width: 17%;" colspan="2"/>
+                        <xpath expr="//field[@name='barcode']" position="before">
+                            <img src='https://img.icons8.com/emoji/452/green-circle-emoji.png' style="width:10px;" alt="Barcode is valid" attrs="{'invisible': [('is_barcode_valid','=',False)]}" colspan="2" />
+                            <img src='https://www.paradigm.com/img/cms/alert-icon-red-11.png' style="width:10px;" alt="Barcode is valid" attrs="{'invisible': [('is_barcode_valid','=',True)]}" colspan="2" />
+                        </xpath>
+                    </div>
+                </group>
+            </field>
+        </record>
+
+    </data>
+</odoo>
