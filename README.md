@@ -1,5 +1,5 @@
 # frmoda-barcode.checker
-Check your barcodes trught https://barcode.monster
+Check your barcodes trought https://barcode.monster
 
 
 # Disclaimer
